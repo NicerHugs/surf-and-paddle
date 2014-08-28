@@ -1,0 +1,86 @@
+
+/* ============= Font Control =============== */
+
+body {
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+h2, .upperNav {
+  font-family: "Oswald";
+}
+
+h1, h2, .logo, .upperNav {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+body * {
+  vertical-align: top;
+}
+
+/* ============= Header ===================== */
+
+header {
+  background: linear-gradient(
+      rgba(20, 100, 175, 0.85),
+      rgba(20, 100, 175, 0.85)),
+      url(http://miriadna.com/desctopwalls/images/max/Ocean-waves-2.jpg);
+  height: 523px;
+  overflow: auto;
+}
+
+.upperHeader {
+  margin: .45em auto .45em 8.85em;
+  text-transform: uppercase;
+  max-width: 1000px;
+}
+
+.upperHeader * {
+  vertical-align: middle;
+  color: #083451;
+}
+
+.upperHeader i {
+  font-size: 3.25em;
+}
+
+.upperHeader span {
+  font-weight: 600;
+  margin-left: .8em;
+  font-size: 1.05em;
+  letter-spacing: -.04em;
+}
+
+.upperNav {
+  float: right;
+  margin-top: .52em;
+}
+
+.upperNav a {
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: 0 .38em;
+}
+
+.upperNav i {
+  font-size: 1.1em;
+  margin: 0 0 .3em .37em;
+}
+.companyName {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 6.5em;
+  margin: 1.44em auto 0 auto;
+  letter-spacing: -.033em;
+  line-height: 1em;
+  text-shadow: 0 1px 3px #083451;
+}
+
+.companyName span {
+  letter-spacing: -.026em;
+  color: #083451;
+}

@@ -113,6 +113,7 @@ main {
   line-height: 1.1em;
   margin: .97em 0 0 .2em;
   letter-spacing: -.015em;
+  color: #083451;
 }
 
 .byline {
@@ -120,12 +121,29 @@ main {
   font-size: .8em;
 }
 
+.byline * {
+  vertical-align: middle;
+}
+
 .byline img {
-  width: 2em;
+  width: 1.68em;
+  margin: 0.1em 0.3em;
+}
+
+.byline a {
+  font-weight: 600;
+  color: #3283BE;
+  margin-left: .15em;
+  letter-spacing: -.03em;
 }
 
 .datetime {
   text-decoration: underline;
+}
+
+.datetime::before {
+  content: "on ";
+  text-decoration: none;
 }
 
 .authorAvatar {

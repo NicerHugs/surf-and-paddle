@@ -1,9 +1,17 @@
 
 /* ============= Font Control =============== */
+@font-face {
+  font-family: "Myriad";
+  src: url(myriad.otf);
+}
 
 body {
   font-family: "Open Sans";
   margin: 0;
+}
+
+.companyName {
+  font-family: "Myriad";
 }
 
 h2, .upperNav {
@@ -17,6 +25,14 @@ h1, h2, .logo, .upperNav {
 
 body * {
   vertical-align: top;
+}
+
+h2 {
+  font-size: 4.03em;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* ============= Header ===================== */
@@ -58,7 +74,6 @@ header {
 }
 
 .upperNav a {
-  text-decoration: none;
   font-size: 1.1em;
   margin: 0 .38em;
 }
@@ -73,14 +88,66 @@ header {
 
 h1 {
   color: #fff;
-  font-size: 6.5em;
-  margin: 1.44em auto 0 auto;
-  letter-spacing: -.033em;
-  line-height: 1em;
+  font-size: 7em;
+  margin: 1.55em auto 0 auto;
+  letter-spacing: -.01em;
+  line-height: .74em;
   text-shadow: 0 1px 3px #083451;
 }
 
 .companyName span {
-  letter-spacing: -.026em;
+  letter-spacing: -.033em;
+  font-weight: 600;
   color: #083451;
+  margin-left: -.15em;
+}
+
+/* ============= Main ===================== */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.postTitle {
+  line-height: 1.1em;
+  margin: .97em 0 0 .2em;
+  letter-spacing: -.015em;
+}
+
+.byline {
+  margin: .4em 1em;
+  font-size: .8em;
+}
+
+.byline img {
+  width: 2em;
+}
+
+.datetime {
+  text-decoration: underline;
+}
+
+.authorAvatar {
+  border-radius: 50%
+}
+
+.mainPost {
+  max-width: 700px;
+  float: left;
+  overflow: auto;
+}
+
+.sidebar {
+  max-width: 300px;
+  float: left;
+  overflow: auto;
+}
+
+.authorInfo img {
+  width: 5em;
+}
+
+.featuredPosts {
+  clear: both;
 }

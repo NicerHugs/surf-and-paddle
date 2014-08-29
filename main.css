@@ -31,7 +31,11 @@ h2 {
 }
 
 a {
-  text-decoration: none;
+  color: #95A7B5;
+}
+
+a:hover {
+  color: #3283BE;
 }
 
 .smGrey {
@@ -82,6 +86,7 @@ header {
 .upperNav a {
   font-size: 1.1em;
   margin: 0 .38em;
+  text-decoration: none;
 }
 
 .upperNav i {
@@ -137,6 +142,7 @@ main {
   color: #3283BE;
   margin-left: .48em;
   letter-spacing: -.03em;
+  text-decoration: none;
 }
 
 .datetime {
@@ -159,9 +165,9 @@ main {
   overflow: auto;
 }
 
-.mainPostBody {
+.mainPostBody, .mainPostFooter {
   font-size: 1.02em;
-  margin: 2.2em 4em 0 .8em;
+  margin: 1.7em 4em 0.5em .8em;
   font-weight: 700;
   letter-spacing: -.039em;
   line-height: 1.6em;
@@ -169,15 +175,72 @@ main {
 }
 
 .mainPostBody p {
-  margin-bottom: 1.7em;
+  margin: .7em 0 .3em 0;
+  overflow: auto;
+  padding: .5em 0
 }
 
 blockquote {
-  border-left: 1px solid #95A7B5;
-  padding: 2em;
+  border-left: 2px solid #95A7B5;
+  margin: .3em 0 .7em .2em;
+  padding: .75em 1em .3em .6em;
   color: #3283BE;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.8em;
+  letter-spacing: .005em;
+  font-weight: 400;
+}
+
+.mainPostFooter {
+  margin: 0 .65em;
+}
+.mainPostFooter * {
+  vertical-align: middle;
+  color: #fff;
+  font-size: .91em;
+  font-weight: 400;
+}
+
+.mainPostFooter i {
+  float: left;
+  width: 1.95em;
+  vertical-align: bottom;
+  padding: .38em 0;
+  margin-right: .7em;
+  font-size: 1.15em;
+}
+
+.mainPostFooter a {
+  display: inline-block;
+  background-color: #95A7B5;
+  text-decoration: none;
+  text-align: center;
+  padding-right: .75em;
+  margin: 0 .35em;
+  line-height: 2.3em;
+  letter-spacing: .01em;
+  height: 2em;
+}
+
+.mainPostFooter a:hover {
+  background-color: #4D5860;
+  color: #fff;
+}
+
+.share {
+  background-color: #106DB3 !important;
+}
+
+.share:hover {
+  background-color: #083451;
+}
+
+.mainPostFooter i {
+  background-color: #4D5860;
+}
+
+.share i {
+  background-color: #083451;
 }
 
 .sidebar {

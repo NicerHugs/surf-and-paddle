@@ -118,6 +118,7 @@ h1 {
 main {
   max-width: 1000px;
   margin: 0 auto;
+  overflow: auto;
 }
 
 .postTitle {
@@ -232,7 +233,7 @@ blockquote {
 }
 
 .share:hover {
-  background-color: #083451;
+  background-color: #083451 !important;
 }
 
 .mainPostFooter i {
@@ -243,16 +244,76 @@ blockquote {
   background-color: #083451;
 }
 
+
+/*============= Sidebar ==================*/
+
 .sidebar {
-  max-width: 300px;
-  float: left;
+  max-width: 290px;
+  padding: 0 .7em;
   overflow: auto;
+  margin-top: 5.2em;
+}
+
+.authorInfo {
+  overflow: auto;
+  text-align: center;
+  margin-bottom: 3.1em;
+}
+
+.authorInfo * {
+  text-decoration: none;
 }
 
 .authorInfo img {
-  width: 5em;
+  width: 5.2em;
+  margin: 0 6.1em .9em 6.1em;
 }
 
-.featuredPosts {
-  clear: both;
+.sidebar .authorName {
+  text-transform: uppercase;
+  color: #3283BE;
+  font-size: 1.1em;
+}
+
+.socialLinks {
+  font-size: .8em;
+  letter-spacing: 3em;
+  margin: .1em 0;
+}
+
+.ad img {
+  width: 17.34em;
+  height: 18.7em;
+  overflow: hidden;
+  margin-bottom: .55em;
+  border: solid 1px #126EB4;
+}
+
+.ad {
+  text-align: right;
+}
+
+.caption {
+  text-align: right;
+  text-decoration: underline;
+  font-size: .8em;
+  letter-spacing: -.015em;
+  margin-bottom: 5em;
+}
+
+h4 {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.15em;
+  letter-spacing: -.015em;
+  color: #126EB4;
+  margin: 2.2em 0 0 0;
+}
+
+.sidebarSection p {
+  font-size: .87em;
+  letter-spacing: -.043em;
+  line-height: 1.75em;
+  margin-top: .4em;
 }

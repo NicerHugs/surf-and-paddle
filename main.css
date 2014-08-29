@@ -6,12 +6,8 @@
 }
 
 body {
-  font-family: "Open Sans";
-  margin: 0;
-}
-
-.companyName {
   font-family: "Myriad";
+  margin: 0;
 }
 
 h2, .upperNav {
@@ -28,11 +24,21 @@ body * {
 }
 
 h2 {
-  font-size: 4.03em;
+  font-size: 4em;
+  letter-spacing: -.013em;
+  color: #083451;
+  line-height: 1.1em;
 }
 
 a {
   text-decoration: none;
+}
+
+.smGrey {
+  color: #95A7B5;
+  font-size: 1.05em;
+  font-weight: 600;
+  letter-spacing: -.034em;
 }
 
 /* ============= Header ===================== */
@@ -88,9 +94,9 @@ header {
 
 h1 {
   color: #fff;
-  font-size: 7em;
+  font-size: 6.95em;
   margin: 1.55em auto 0 auto;
-  letter-spacing: -.01em;
+  letter-spacing: -.008em;
   line-height: .74em;
   text-shadow: 0 1px 3px #083451;
 }
@@ -110,34 +116,31 @@ main {
 }
 
 .postTitle {
-  line-height: 1.1em;
   margin: .97em 0 0 .2em;
-  letter-spacing: -.015em;
-  color: #083451;
 }
 
 .byline {
-  margin: .4em 1em;
+  margin: .55em 1.3em;
   font-size: .8em;
 }
 
 .byline * {
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 
 .byline img {
-  width: 1.68em;
-  margin: 0.1em 0.3em;
+  width: 1.71em;
 }
 
 .byline a {
-  font-weight: 600;
+  font-weight: 700;
   color: #3283BE;
-  margin-left: .15em;
+  margin-left: .48em;
   letter-spacing: -.03em;
 }
 
 .datetime {
+  margin-left: 1em;
   text-decoration: underline;
 }
 
@@ -154,6 +157,27 @@ main {
   max-width: 700px;
   float: left;
   overflow: auto;
+}
+
+.mainPostBody {
+  font-size: 1.02em;
+  margin: 2.2em 4em 0 .8em;
+  font-weight: 700;
+  letter-spacing: -.039em;
+  line-height: 1.6em;
+  color: #5E686F;
+}
+
+.mainPostBody p {
+  margin-bottom: 1.7em;
+}
+
+blockquote {
+  border-left: 1px solid #95A7B5;
+  padding: 2em;
+  color: #3283BE;
+  text-transform: uppercase;
+  font-size: 2em;
 }
 
 .sidebar {

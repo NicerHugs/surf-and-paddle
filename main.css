@@ -45,6 +45,37 @@ a:hover {
   letter-spacing: -.034em;
 }
 
+.imgLink {
+  position: relative;
+  z-index: 2;
+  overflow: auto;
+  display:inline-block;
+}
+
+.imgLink::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(20, 100, 175, 0.5);
+  z-index: 5;
+}
+
+.imgLink:hover::after {
+  opacity: 0;
+  transition-duration: .5s;
+}
+
+.invisible {
+  display: none;
+}
+
+.circe {
+  border-radius: 50%;
+}
+
 /* ============= Header ===================== */
 
 header {
@@ -117,7 +148,7 @@ h1 {
 
 main {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 4.2em auto;
   overflow: auto;
 }
 
@@ -141,7 +172,6 @@ main {
 .byline a {
   font-weight: 700;
   color: #3283BE;
-  margin-left: .48em;
   letter-spacing: -.03em;
   text-decoration: none;
 }
@@ -156,7 +186,7 @@ main {
   text-decoration: none;
 }
 
-.authorAvatar {
+.byline .imgLink, .authorInfo .imgLink, .authorAvatar {
   border-radius: 50%
 }
 
@@ -266,26 +296,26 @@ blockquote {
 
 .authorInfo img {
   width: 5.2em;
-  margin: 0 6.1em .9em 6.1em;
 }
 
 .sidebar .authorName {
   text-transform: uppercase;
   color: #3283BE;
   font-size: 1.1em;
+  display: block;
 }
 
-.socialLinks {
-  font-size: .8em;
-  letter-spacing: 3em;
-  margin: .1em 0;
+.socialLinks a{
+  font-size: .82em;
+  line-height: 1.4em;
+  letter-spacing: -.05em;
+  padding: 0 .5em;
 }
 
 .ad img {
   width: 17.34em;
   height: 18.7em;
   overflow: hidden;
-  margin-bottom: .55em;
   border: solid 1px #126EB4;
 }
 
@@ -316,4 +346,104 @@ h4 {
   letter-spacing: -.043em;
   line-height: 1.75em;
   margin-top: .4em;
+}
+
+/*================= Featured Posts ================*/
+
+.featuredPosts {
+  text-align: center;
+  border-top: 1px solid #95A7B5;
+}
+
+.featuredPosts h2 {
+  margin: .57em 0;
+  letter-spacing: -.005em;
+}
+
+.featuredPosts a {
+  display: inline-block;
+  width: 25%;
+  height: 20.6em;
+  vertical-align: bottom;
+  margin-top: .35em;
+  overflow: hidden;
+  text-align: left;
+
+}
+
+.post1 {
+  background: url("https://avatars3.githubusercontent.com/u/8377050?v=2&s=460")
+}
+.post2 {
+  background: url("https://avatars3.githubusercontent.com/u/8377050?v=2&s=460")
+}
+.post3 {
+  background: url("https://avatars3.githubusercontent.com/u/8377050?v=2&s=460")
+}
+.post4 {
+  background: url("https://avatars3.githubusercontent.com/u/8377050?v=2&s=460")
+}
+
+.featuredPosts a span {
+  position: absolute;
+  bottom: .4em;
+  left: .53em;
+  line-height: 1.18em;
+  padding-right: 1em;
+  z-index: 10;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-size: 1.9em;
+  letter-spacing: -.008em;
+  color: #083451;
+}
+
+.featuredPosts a:hover span {
+  color: #fff;
+  transition-duration: .5s;
+}
+
+footer {
+  background: #083451;
+  padding: 0.85em 9.5em 1.3em 9.5em;
+  overflow: auto;
+}
+
+footer * {
+  color: #A9B8C2;
+}
+
+.footerInfo {
+  float: left;
+}
+
+.footerInfo span {
+  font-size: .94em;
+  letter-spacing: -.005em;
+  line-height: 4.8em;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin-right: .3em;
+}
+
+nav li {
+  display: inline-block;
+  font-size: .9em;
+  padding: 0 .5em;
+  border-right: solid 1px #A9B8C2;
+  margin: .75em 0;
+  letter-spacing: .015em;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+nav li:last-of-type {
+  border-right: none !important;
 }

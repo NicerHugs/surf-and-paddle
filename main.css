@@ -1,5 +1,19 @@
 
-/* ============= Font Control =============== */
+/* ======================================
+================ Global =================
+========================================= */
+
+body {
+  font-size: 16px;
+  margin: 0;
+}
+body * {
+  vertical-align: top;
+}
+
+
+/*============== Fonts ================== */
+
 @font-face {
   font-family: "Myriad";
   src: url(myriad.otf);
@@ -7,142 +21,193 @@
 
 body {
   font-family: "Myriad";
-  margin: 0;
 }
 
-h2, .upperNav {
+h2,
+h4,
+.upperNav,
+.featuredPosts h3 {
   font-family: "Oswald";
+  font-weight: 400;
 }
 
-h1, h2, .logo, .upperNav {
+a {
+  text-decoration: none;
+}
+
+p a,
+.underline {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h4,
+blockquote,
+.uppercase {
   text-transform: uppercase;
-  font-weight: normal;
 }
 
-body * {
-  vertical-align: top;
+
+/*============== Colors ================= */
+
+p {
+  color: #5E686F;
+}
+
+a,
+footer,
+.byline,
+.sidebarSection p {
+  color: #A3B3BF;
+}
+
+h2,
+h3,
+.upperHeader,
+.upperNav a,
+.companyName span {
+  color: #083452;
+}
+
+h4,
+blockquote,
+.authorName,
+a:hover {
+  color: #106DB3;
+}
+
+h1,
+.mainPostFooter a,
+.imgLink:hover h3,
+.upperNav a:hover {
+  color: #fff;
+}
+
+
+/* ============ Text sizing ================ */
+
+h1 {
+  font-size: 6.95em;
+  font-weight: 400;
+  letter-spacing: -.009em;
 }
 
 h2 {
   font-size: 4em;
   letter-spacing: -.013em;
-  color: #083451;
   line-height: 1.1em;
 }
 
-a {
-  color: #95A7B5;
+h3 {
+  font-size: 1.9em;
+  letter-spacing: -.008em;
+  line-height: 1.18em;
 }
 
-a:hover {
-  color: #3283BE;
+h4 {
+  font-size: 1.15em;
+  letter-spacing: -.015em;
 }
 
-.smGrey {
-  color: #95A7B5;
-  font-size: 1.05em;
+blockquote {
+  font-size: 1.8em;
+  font-weight: 400;
+  letter-spacing: .005em;
+}
+
+.upperHeader span {
   font-weight: 600;
-  letter-spacing: -.034em;
+  font-size: 1.05em;
+  letter-spacing: -.04em;
 }
 
-.imgLink {
-  position: relative;
-  z-index: 2;
-  overflow: auto;
-  display:inline-block;
+.upperNav {
+  font-size: 1.1em;
 }
 
-.imgLink::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(20, 100, 175, 0.5);
-  z-index: 5;
+.companyName span {
+  letter-spacing: -.033em;
+  font-weight: 600;
 }
 
-.imgLink:hover::after {
-  opacity: 0;
-  transition-duration: .5s;
+.mainPostBody {
+  font-size: 1.02em;
+  font-weight: 700;
+  letter-spacing: -.039em;
+  line-height: 1.6em;
 }
 
-.invisible {
-  display: none;
+.byline {
+  font-size: .8em;
 }
 
-.circe {
-  border-radius: 50%;
+.authorInfo .authorName {
+  font-size: 1.1em;
+}
+
+.socialLinks {
+  font-size: .95em;
+}
+
+.caption {
+  font-size: .95em;
+  letter-spacing: -.015em;
+}
+
+.sidebarSection p {
+  font-size: .9em;
+  letter-spacing: .023em;
+  line-height: 1.7em;
 }
 
 /* ============= Header ===================== */
 
 header {
   background: linear-gradient(
-      rgba(20, 100, 175, 0.85),
-      rgba(20, 100, 175, 0.85)),
+      rgba(16, 109, 179, 0.75),
+      rgba(26, 109, 179, 0.75)),
       url(http://miriadna.com/desctopwalls/images/max/Ocean-waves-2.jpg);
   height: 523px;
   overflow: auto;
 }
 
 .upperHeader {
-  margin: .45em auto .45em 8.85em;
-  text-transform: uppercase;
+  margin: .4em auto .4em 8.75em;
   max-width: 1000px;
 }
 
 .upperHeader * {
   vertical-align: middle;
-  color: #083451;
 }
 
-.upperHeader i {
+.siteName i {
   font-size: 3.25em;
-}
-
-.upperHeader span {
-  font-weight: 600;
-  margin-left: .8em;
-  font-size: 1.05em;
-  letter-spacing: -.04em;
+  margin-right: .25em;
 }
 
 .upperNav {
   float: right;
-  margin-top: .52em;
+  margin-top: .41em;
 }
 
 .upperNav a {
-  font-size: 1.1em;
   margin: 0 .38em;
-  text-decoration: none;
 }
 
 .upperNav i {
-  font-size: 1.1em;
   margin: 0 0 .3em .37em;
 }
 .companyName {
   text-align: center;
+  margin: 9.1em 0 0 -.3em;
 }
 
 h1 {
-  color: #fff;
-  font-size: 6.95em;
-  margin: 1.55em auto 0 auto;
-  letter-spacing: -.008em;
-  line-height: .74em;
+  margin: 0 auto -.23em auto;
   text-shadow: 0 1px 3px #083451;
 }
 
-.companyName span {
-  letter-spacing: -.033em;
-  font-weight: 600;
-  color: #083451;
-  margin-left: -.15em;
-}
 
 /* ============= Main ===================== */
 
@@ -153,12 +218,11 @@ main {
 }
 
 .postTitle {
-  margin: .97em 0 0 .2em;
+  margin: .976em 0 0 .2em;
 }
 
 .byline {
-  margin: .55em 1.3em;
-  font-size: .8em;
+  margin: .55em 1.1em;
 }
 
 .byline * {
@@ -171,23 +235,15 @@ main {
 
 .byline a {
   font-weight: 700;
-  color: #3283BE;
   letter-spacing: -.03em;
-  text-decoration: none;
+  margin: 0 .2em;
 }
 
+.byline span {
+  margin-left: .9em;
+}
 .datetime {
   margin-left: 1em;
-  text-decoration: underline;
-}
-
-.datetime::before {
-  content: "on ";
-  text-decoration: none;
-}
-
-.byline .imgLink, .authorInfo .imgLink, .authorAvatar {
-  border-radius: 50%
 }
 
 .mainPost {
@@ -196,13 +252,9 @@ main {
   overflow: auto;
 }
 
+
 .mainPostBody, .mainPostFooter {
-  font-size: 1.02em;
   margin: 1.7em 4em 0.5em .8em;
-  font-weight: 700;
-  letter-spacing: -.039em;
-  line-height: 1.6em;
-  color: #5E686F;
 }
 
 .mainPostBody p {
@@ -215,11 +267,6 @@ blockquote {
   border-left: 2px solid #95A7B5;
   margin: .3em 0 .7em .2em;
   padding: .75em 1em .3em .6em;
-  color: #3283BE;
-  text-transform: uppercase;
-  font-size: 1.8em;
-  letter-spacing: .005em;
-  font-weight: 400;
 }
 
 .mainPostFooter {
@@ -227,9 +274,7 @@ blockquote {
 }
 .mainPostFooter * {
   vertical-align: middle;
-  color: #fff;
   font-size: .91em;
-  font-weight: 400;
 }
 
 .mainPostFooter i {
@@ -239,38 +284,25 @@ blockquote {
   padding: .38em 0;
   margin-right: .7em;
   font-size: 1.15em;
+  background-color: #4D5860;
 }
 
 .mainPostFooter a {
   display: inline-block;
   background-color: #95A7B5;
-  text-decoration: none;
   text-align: center;
-  padding-right: .75em;
-  margin: 0 .35em;
+  padding-right: .9em;
+  margin: 0 .36em;
   line-height: 2.3em;
   letter-spacing: .01em;
   height: 2em;
 }
 
 .mainPostFooter a:hover {
-  background-color: #4D5860;
-  color: #fff;
+  background-color: #106DB3;
 }
 
-.share {
-  background-color: #106DB3 !important;
-}
-
-.share:hover {
-  background-color: #083451 !important;
-}
-
-.mainPostFooter i {
-  background-color: #4D5860;
-}
-
-.share i {
+.mainPostFooter a:hover i {
   background-color: #083451;
 }
 
@@ -290,25 +322,16 @@ blockquote {
   margin-bottom: 3.1em;
 }
 
-.authorInfo * {
-  text-decoration: none;
-}
-
 .authorInfo img {
   width: 5.2em;
 }
 
-.sidebar .authorName {
-  text-transform: uppercase;
-  color: #3283BE;
-  font-size: 1.1em;
+.authorInfo .authorName {
   display: block;
+  margin-top: .8em;
 }
 
-.socialLinks a{
-  font-size: .82em;
-  line-height: 1.4em;
-  letter-spacing: -.05em;
+.socialLinks a {
   padding: 0 .5em;
 }
 
@@ -324,93 +347,55 @@ blockquote {
 }
 
 .caption {
-  text-align: right;
-  text-decoration: underline;
-  font-size: .8em;
-  letter-spacing: -.015em;
-  margin-bottom: 5em;
+  line-height: 2.2em;
 }
 
 h4 {
-  font-family: "Oswald";
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1.15em;
-  letter-spacing: -.015em;
-  color: #126EB4;
-  margin: 2.2em 0 0 0;
+  margin: 1.9em 0 0 0;
 }
 
 .sidebarSection p {
-  font-size: .87em;
-  letter-spacing: -.043em;
-  line-height: 1.75em;
-  margin-top: .4em;
+  margin-top: .3em;
 }
 
 /*================= Featured Posts ================*/
 
-.featuredPosts {
+.featuredPosts h2{
   text-align: center;
   border-top: 1px solid #95A7B5;
-}
-
-.featuredPosts h2 {
-  margin: .57em 0;
+  padding-top: .57em;
+  margin-bottom: .64em;
   letter-spacing: -.005em;
 }
 
-.featuredPosts a {
-  display: inline-block;
-  width: 25%;
-  height: 20.6em;
-  vertical-align: bottom;
-  margin-top: .35em;
-  overflow: hidden;
-  text-align: left;
-
-}
-
-.post1 {
-  background: url("https://avatars3.githubusercontent.com/u/8377050?v=2&s=460")
-}
-.post2 {
-  background: url("https://avatars3.githubusercontent.com/u/8377050?v=2&s=460")
-}
-.post3 {
-  background: url("https://avatars3.githubusercontent.com/u/8377050?v=2&s=460")
-}
-.post4 {
-  background: url("https://avatars3.githubusercontent.com/u/8377050?v=2&s=460")
-}
-
-.featuredPosts a span {
+.featuredPosts h3 {
   position: absolute;
   bottom: .4em;
   left: .53em;
-  line-height: 1.18em;
   padding-right: 1em;
-  z-index: 10;
-  font-family: "Oswald";
-  text-transform: uppercase;
-  font-size: 1.9em;
-  letter-spacing: -.008em;
-  color: #083451;
+  z-index: 1;
+  margin: 0;
 }
 
-.featuredPosts a:hover span {
-  color: #fff;
+.featuredPosts a:hover h3 {
   transition-duration: .5s;
+}
+
+.featuredPosts div {
+  width: 25%;
+  height: 330px;
+  overflow: auto;
+}
+
+.featuredPosts img {
+  width: 100%;
+  height: 330px;
 }
 
 footer {
   background: #083451;
   padding: 0.85em 9.5em 1.3em 9.5em;
   overflow: auto;
-}
-
-footer * {
-  color: #A9B8C2;
 }
 
 .footerInfo {
@@ -440,10 +425,40 @@ nav li {
   letter-spacing: .015em;
 }
 
-nav li a {
-  text-decoration: none;
-}
-
 nav li:last-of-type {
   border-right: none !important;
+}
+
+
+/* ================= Image Hover overlays ============== */
+
+.imgLink {
+  display:inline-block;
+}
+
+.imgLink a {
+  display: inline-block;
+  background-color: #106DB3;
+  position: relative;
+}
+
+.imgLink img {
+  opacity: .5;
+  vertical-align: bottom;
+}
+
+.imgLink img:hover {
+  opacity: 1;
+  transition-duration: .5s;
+}
+
+
+/* ================= GLOBAL CLASSES ==================== */
+
+.invisible {
+  display: none;
+}
+
+.circle {
+  border-radius: 50%;
 }

@@ -21,7 +21,7 @@ $max-content-width: 1000px;
 
 @mixin slow-transition {
   transition-duration: .5s;
-  -webkit-transition-duration: 5s;
+  -webkit-transition-duration: .5s;
   -moz-transition-duration: .5s;
   -ms-transition-duration: .5s;
 }
@@ -360,7 +360,7 @@ blockquote {
   div {
     background-image: url('https://avatars3.githubusercontent.com/u/8377050?v=2&s=460');
     display: inline-block;
-    height: $double-base-size;
+    height: $base-size * 20;
     width: 25%;
     }
 }
@@ -498,12 +498,14 @@ and (min-width: 800px) {
   }
 
   .sidebar {
-    width: 176px;
+    width: $base-size * 10.5;
+    display: inline-block;
+
+  .color-overlay {
+    width: 100%;
+    height: $base-size * 10.5;
   }
 
-  .ad img {
-    height: auto;
-    width: 100%;
   }
 
   .caption {

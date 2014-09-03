@@ -19,6 +19,13 @@ $heading1-font-size: $base-size * 7;
 
 $max-content-width: 1000px;
 
+@mixin slow-transition {
+  transition-duration: .5s;
+  -webkit-transition-duration: 5s;
+  -moz-transition-duration: .5s;
+  -ms-transition-duration: .5s;
+}
+
 body {
   font-family: 'Myriad';
   font-size: $base-size;
@@ -248,23 +255,23 @@ blockquote {
     background-color: $body-color-dark;
     float: left;
     font-size: $base-size;
+    line-height: $double-base-size;
     position: absolute;
     top: 0;
     width: $double-base-size;
-    line-height: $double-base-size;
 
   }
 
   span {
-    padding: $half-base-size $three-quarters-base-size;
     margin-left: $double-base-size;
+    padding: $half-base-size $three-quarters-base-size;
   }
 
   a {
     background-color: $accent-color-light;
-    text-align: center;
     margin: 0 $half-base-size;
     position: relative;
+    text-align: center;
 
     &:hover {
       background-color: $primary-color;
@@ -324,8 +331,8 @@ blockquote {
 }
 
 .caption {
-  font-size:  $small-font;
   line-height: $base-size *2;
+  font-size:  $small-font;
 }
 
 .sidebar-section p {
@@ -428,12 +435,12 @@ nav {
 
     h3 {
       color: #fff;
-      transition-duration: .5s;
+      @include slow-transition;
     }
 
     a {
       background: none;
-      transition-duration: .5s;
+      @include slow-transition;
     }
   }
 }

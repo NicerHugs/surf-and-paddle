@@ -246,7 +246,7 @@ blockquote {
 
   * {
     display: inline-block;
-    font-size: $smaller-font-size;
+    font-size: $small-font;
     height: $double-base-size;
     vertical-align: middle;
   }
@@ -382,7 +382,7 @@ footer {
   float: left;
 
   span {
-    font-size: $smaller-font-size;
+    font-size: $small-font;
     line-height: $base-size * 4.8;
   }
 }
@@ -397,7 +397,7 @@ nav {
   li {
     border-right: solid 1px $accent-color-light;
     display: inline-block;
-    font-size: $smaller-font-size;
+    font-size: $small-font;
     margin: $three-quarters-base-size 0;
     padding: 0 $half-base-size;
 

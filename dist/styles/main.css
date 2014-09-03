@@ -130,25 +130,25 @@ blockquote {
   margin: 0 8px; }
   .main-post-footer * {
     display: inline-block;
-    font-size: 14.4px;
+    font-size: 15.2px;
     height: 32px;
     vertical-align: middle; }
   .main-post-footer i {
     background-color: #5e686f;
     float: left;
     font-size: 16px;
+    line-height: 32px;
     position: absolute;
     top: 0;
-    width: 32px;
-    line-height: 32px; }
+    width: 32px; }
   .main-post-footer span {
-    padding: 8px 12px;
-    margin-left: 32px; }
+    margin-left: 32px;
+    padding: 8px 12px; }
   .main-post-footer a {
     background-color: #a3b3bf;
-    text-align: center;
     margin: 0 8px;
-    position: relative; }
+    position: relative;
+    text-align: center; }
     .main-post-footer a:hover {
       background-color: #106db3; }
       .main-post-footer a:hover i {
@@ -175,9 +175,8 @@ blockquote {
     margin-top: 16px; }
 
 .social-links {
-  font-size: 15.2px; }
-  .social-links a {
-    padding: 0 8px; }
+  font-size: 15.2px a;
+  font-size-padding: 0 8px; }
 
 .ad {
   text-align: right; }
@@ -187,8 +186,8 @@ blockquote {
     width: 272px; }
 
 .caption {
-  font-size: 15.2px;
-  line-height: 32px; }
+  line-height: 32px;
+  font-size: 15.2px; }
 
 .sidebar-section p {
   font-size: 15.2px;
@@ -206,7 +205,7 @@ blockquote {
 .featured-posts div {
   background-image: url('https://avatars3.githubusercontent.com/u/8377050?v=2&s=460');
   display: inline-block;
-  height: 320px;
+  height: 32px;
   width: 25%; }
 
 footer {
@@ -221,23 +220,19 @@ footer {
 .footer-info {
   float: left; }
   .footer-info span {
-    font-size: 0.94em;
-    letter-spacing: -0.005em;
-    line-height: 4.8em; }
+    font-size: 15.2px;
+    line-height: 76.8px; }
 
 nav {
   float: right; }
   nav .fa {
     display: none; }
-  nav ul {
-    margin-right: 0.3em; }
   nav li {
     border-right: solid 1px #a3b3bf;
     display: inline-block;
-    font-size: 0.9em;
-    letter-spacing: 0.015em;
-    margin: 0.75em 0;
-    padding: 0 0.5em; }
+    font-size: 15.2px;
+    margin: 12px 0;
+    padding: 0 8px; }
     nav li:last-of-type {
       border-right: none !important; }
 
@@ -258,10 +253,16 @@ nav {
     position: absolute; }
   .color-overlay:hover h3 {
     color: #fff;
-    transition-duration: 0.5s; }
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s; }
   .color-overlay:hover a {
     background: none;
-    transition-duration: 0.5s; }
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s; }
 
 .invisible {
   display: none; }

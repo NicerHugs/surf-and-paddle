@@ -1,0 +1,411 @@
+body {
+  font-family: 'Myriad';
+  font-size: 16px;
+  margin: 0; }
+  body * {
+    vertical-align: top; }
+
+@font-face {
+  font-family: 'Myriad';
+  src: url('../../fonts/myriad.otf'); }
+
+h2, h4, .upper-nav, .featured-posts h3 {
+  font-family: 'Oswald';
+  font-weight: 400; }
+
+a {
+  text-decoration: none; }
+
+p a, .underline {
+  text-decoration: underline; }
+
+h1, h2, h4, blockquote, .uppercase {
+  text-transform: uppercase; }
+
+p {
+  color: #5e686f; }
+
+a, footer, .byline, .sidebar-section p {
+  color: #a3b3bf; }
+
+h2, h3, .upper-header, .upper-nav a, .company-name span {
+  color: #083452; }
+
+h4, blockquote, .author-name, a:hover {
+  color: #106db3; }
+
+h1, .main-post-footer a, .featured-posts a:hover h3, .upper-nav a:hover {
+  color: #fff; }
+
+h1 {
+  font-size: 112px;
+  font-weight: 400;
+  margin: 0 auto;
+  text-shadow: 0 1px 3px #083451; }
+
+h2 {
+  font-size: 64px;
+  margin: 48px auto; }
+
+h3 {
+  font-size: 32px; }
+
+h4 {
+  margin: 32px 0 0; }
+
+header {
+  background: linear-gradient(rgba(16, 109, 179, 0.75), rgba(26, 109, 179, 0.75)), url('http://miriadna.com/desctopwalls/images/max/Ocean-waves-2.jpg');
+  height: 560px;
+  overflow: auto; }
+
+.upper-header {
+  margin: 8px auto;
+  max-width: 1000px; }
+  .upper-header * {
+    vertical-align: middle; }
+  .upper-header span {
+    font-weight: 600; }
+
+.site-name i {
+  font-size: 52px;
+  margin-right: 4px; }
+
+.upper-nav {
+  float: right;
+  font-size: 16px; }
+  .upper-nav a {
+    margin: 0 8px; }
+
+.company-name {
+  margin-top: 144px;
+  text-align: center; }
+  .company-name span {
+    font-weight: 600; }
+
+main {
+  margin: 0 auto 64px;
+  max-width: 1000px;
+  overflow: auto; }
+
+.byline {
+  font-size: 12px;
+  margin: 8px 16px; }
+  .byline * {
+    vertical-align: bottom; }
+  .byline div {
+    background-image: url('https://avatars3.githubusercontent.com/u/8377050?v=2&s=460');
+    display: inline-block;
+    height: 32px;
+    width: 32px; }
+  .byline a {
+    font-weight: 700; }
+  .byline span {
+    margin-left: 16px; }
+
+.datetime {
+  margin-left: 16px; }
+
+.main-post {
+  float: left;
+  max-width: 700px; }
+
+.main-post-body {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 16px;
+  padding-right: 32px; }
+  .main-post-body p {
+    margin: 24px 0;
+    overflow: auto; }
+
+blockquote {
+  border-left: 2px solid #a3b3bf;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 16px;
+  padding: 16px; }
+
+.main-post-footer {
+  margin: 0 8px; }
+  .main-post-footer * {
+    display: inline-block;
+    font-size: 15.2px;
+    height: 32px;
+    vertical-align: middle; }
+  .main-post-footer i {
+    background-color: #5e686f;
+    float: left;
+    font-size: 16px;
+    line-height: 32px;
+    position: absolute;
+    top: 0;
+    width: 32px; }
+  .main-post-footer span {
+    margin-left: 32px;
+    padding: 8px 12px; }
+  .main-post-footer a {
+    background-color: #a3b3bf;
+    margin: 0 8px;
+    position: relative;
+    text-align: center; }
+    .main-post-footer a:hover {
+      background-color: #106db3; }
+      .main-post-footer a:hover i {
+        background-color: #083452; }
+
+.sidebar {
+  margin-top: 80px;
+  max-width: 288px;
+  overflow: auto;
+  padding: 0 16px; }
+
+.author-info {
+  margin-bottom: 48px;
+  overflow: auto;
+  text-align: center; }
+  .author-info .color-overlay {
+    background-image: url('https://avatars3.githubusercontent.com/u/8377050?v=2&s=460');
+    height: 80px;
+    margin: 0 auto;
+    width: 80px; }
+  .author-info .author-name {
+    display: block;
+    font-size: 16px;
+    margin-top: 16px; }
+
+.social-links {
+  font-size: 15.2px a;
+  font-size-padding: 0 8px; }
+
+.ad {
+  text-align: right; }
+  .ad div {
+    background-image: url('https://avatars3.githubusercontent.com/u/8377050?v=2&s=460');
+    height: 288px;
+    width: 272px; }
+
+.caption {
+  line-height: 32px;
+  font-size: 15.2px; }
+
+.sidebar-section p {
+  font-size: 15.2px;
+  line-height: 32px;
+  margin-top: 8px; }
+
+.featured-posts h2 {
+  border-top: 1px solid #a3b3bf;
+  padding-top: 48px;
+  text-align: center; }
+.featured-posts h3 {
+  display: inline-block;
+  margin: 0;
+  padding-right: 16px; }
+.featured-posts div {
+  background-image: url('https://avatars3.githubusercontent.com/u/8377050?v=2&s=460');
+  display: inline-block;
+  height: 320px;
+  width: 25%; }
+
+footer {
+  background: #083451;
+  overflow: auto; }
+
+.footer-content {
+  margin: 16px auto;
+  max-width: 1000px;
+  overflow: auto; }
+
+.footer-info {
+  float: left; }
+
+.copy-short {
+  display: none; }
+
+.copy-long {
+  font-size: 15.2px;
+  line-height: 76.8px; }
+
+.nav-icon {
+  display: none !important; }
+
+nav {
+  float: right; }
+  nav li {
+    border-right: solid 1px #a3b3bf;
+    display: inline-block;
+    font-size: 15.2px;
+    margin: 12px 0;
+    padding: 0 8px; }
+    nav li:last-of-type {
+      border-right: none !important; }
+
+.color-overlay {
+  background-size: cover;
+  position: relative; }
+  .color-overlay a {
+    background-color: rgba(16, 109, 179, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .color-overlay h3 {
+    bottom: 32px;
+    color: #083452;
+    left: 32px;
+    position: absolute; }
+  .color-overlay:hover h3 {
+    color: #fff;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s; }
+  .color-overlay:hover a {
+    background: none;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s; }
+
+.invisible {
+  display: none; }
+
+.circle {
+  border-radius: 50%; }
+
+@media all and (max-width: 1020px) and (min-width: 800px) {
+  header {
+    height: 350px; }
+  .upper-header {
+    width: 750px; }
+  .company-name {
+    margin-top: 4.5em; }
+  h1 {
+    font-size: 6em; }
+  .company-name span {
+    font-size: 0.9em; }
+  h2 {
+    font-size: 3em; }
+  main {
+    width: 800px; }
+  .main-post {
+    width: 600px; }
+    .main-post p {
+      font-weight: 500;
+      letter-spacing: auto; }
+  .sidebar {
+    width: 168px;
+    display: inline-block; }
+    .sidebar .color-overlay {
+      width: 100%;
+      height: 168px; }
+    .sidebar .caption {
+      font-size: 0.7em; }
+  .footer-content {
+    width: 800px; }
+  .copy-short {
+    display: inline !important; }
+  .copy-long {
+    display: none !important; }
+  nav ul {
+    padding-left: 0; } }
+
+@media all and (max-width: 799px) and (min-width: 500px) {
+  header {
+    height: 350px; }
+  .upper-header {
+    max-width: 700px;
+    margin: 0.5em 1em; }
+  .company-name {
+    margin-top: 1em; }
+  h1 {
+    font-size: 6em;
+    max-width: 750px; }
+  main {
+    max-width: 750px; }
+  .main-post {
+    max-width: 100%; }
+  .sidebar {
+    display: none; }
+  .featured-posts div {
+    overflow: auto;
+    width: 50%; }
+  nav {
+    margin-top: 1em; }
+  .footer-content {
+    max-width: 750px; }
+  .footer-content i {
+    margin-right: 1em; } }
+
+@media all and (max-width: 499px) {
+  header {
+    height: 400px; }
+  .site-name {
+    display: none; }
+  .upper-nav {
+    float: none;
+    font-size: 0.9em;
+    margin: 1em; }
+  .search {
+    float: right; }
+  .company-name {
+    margin: 1em 0 0 -0.31em; }
+  h1 {
+    font-size: 5em;
+    max-width: 400px;
+    margin: 0 auto; }
+  .company-name span {
+    font-size: 0.9em; }
+  main {
+    margin-bottom: 2em; }
+  h2 {
+    font-size: 2em; }
+  .byline {
+    margin: 1em; }
+    .byline .datetime, .byline span {
+      margin: 0; }
+  .main-post {
+    padding: 0 1em; }
+  .main-post-body {
+    margin: 1em; }
+    .main-post-body p {
+      font-size: 0.8em; }
+  blockquote {
+    font-size: 1.1em; }
+  .main-post-footer {
+    margin: 0 auto;
+    max-width: 200px; }
+    .main-post-footer span {
+      display: none; }
+    .main-post-footer a {
+      margin: 0 1em;
+      padding: 0; }
+    .main-post-footer i {
+      margin-right: 0; }
+  .sidebar {
+    display: none; }
+  .featured-posts div {
+    height: 220px;
+    width: 50%; }
+    .featured-posts div h3 {
+      color: #fff;
+      font-size: 1.3em; }
+  footer {
+    font-size: 0.9em; }
+  .footer-info {
+    float: left; }
+  .nav-icon .fa {
+    display: inline-block !important;
+    font-size: 2em;
+    margin-right: 0.5em; }
+  nav {
+    margin-top: 1em; }
+    nav ul {
+      width: 100%;
+      padding: 0px; }
+  .footer-content {
+    width: 300px; }
+    .footer-content span {
+      display: none; } }

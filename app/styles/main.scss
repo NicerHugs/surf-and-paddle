@@ -1,0 +1,717 @@
+
+// ======================================
+//================ Global =================
+//========================================= */
+
+$primary-color: #106db3;
+$heading-color: #083452;
+$body-color-dark: #5e686f;
+$accent-color-light: #a3b3bf;
+
+$base-size: 16px;
+
+$small-font: $base-size * .95;
+$half-base-size: $base-size * .5;
+$three-quarters-base-size: $base-size * .75;
+$double-base-size: $base-size * 2;
+
+$heading1-font-size: $base-size * 7;
+
+$max-content-width: 1000px;
+
+@mixin slow-transition {
+  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
+  -moz-transition-duration: .5s;
+  -ms-transition-duration: .5s;
+}
+
+body {
+  font-family: 'Myriad';
+  font-size: $base-size;
+  margin: 0;
+
+  * {
+    vertical-align: top;
+  }
+}
+
+
+// ============== Fonts ================== */
+
+@font-face {
+  font-family: 'Myriad';
+  src: url('../../fonts/myriad.otf');
+}
+
+
+h2,
+h4,
+.upper-nav,
+.featured-posts h3 {
+  font-family: 'Oswald';
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+p a,
+.underline {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h4,
+blockquote,
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+// ============== Colors ================= */
+
+p {
+  color: $body-color-dark;
+}
+
+a,
+footer,
+.byline,
+.sidebar-section p {
+  color: $accent-color-light;
+}
+
+h2,
+h3,
+.upper-header,
+.upper-nav a,
+.company-name span {
+  color: $heading-color;
+}
+
+h4,
+blockquote,
+.author-name,
+a:hover {
+  color: $primary-color;
+}
+
+h1,
+.main-post-footer a,
+.featured-posts a:hover h3,
+.upper-nav a:hover {
+  color: #fff;
+}
+
+h1 {
+  font-size: $heading1-font-size;
+  font-weight: 400;
+  margin: 0 auto;
+  text-shadow: 0 1px 3px #083451;
+}
+
+h2 {
+  font-size: $base-size * 4;
+  margin: $base-size * 3 auto;
+}
+
+h3 {
+  font-size: $double-base-size;
+  }
+
+h4 {
+  margin: $double-base-size 0 0;
+}
+
+// ============= Header ===================== */
+
+header {
+  background: linear-gradient(
+      rgba(16, 109, 179, .75),
+      rgba(26, 109, 179, .75)),
+      url('http://miriadna.com/desctopwalls/images/max/Ocean-waves-2.jpg');
+  height: $heading1-font-size * 5;
+  overflow: auto;
+}
+
+
+.upper-header {
+  margin: $half-base-size auto;
+  max-width: $max-content-width;
+
+  * {
+    vertical-align: middle;
+  }
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.site-name i {
+  font-size: $base-size * 3.25;
+  margin-right: $base-size * .25;
+}
+
+.upper-nav {
+  float: right;
+  font-size: $base-size;
+
+  a {
+    margin: 0 $half-base-size;
+  }
+}
+
+
+.company-name {
+  margin-top: $base-size * 9;
+  text-align: center;
+
+  span {
+    font-weight: 600;
+  }
+}
+
+
+
+// ============= Main ===================== */
+
+main {
+  margin: 0 auto $base-size * 4;
+  max-width: $max-content-width;
+  overflow: auto;
+}
+
+.byline {
+  font-size: $three-quarters-base-size;
+  margin: $half-base-size $base-size;
+
+  * {
+    vertical-align: bottom;
+  }
+
+  div {
+    background-image: url('https://avatars3.githubusercontent.com/u/8377050?v=2&s=460');
+    display: inline-block;
+    height: $double-base-size;
+    width: $double-base-size;
+  }
+
+  a {
+    font-weight: 700;
+  }
+
+  span {
+    margin-left: $base-size;
+  }
+}
+
+.datetime {
+  margin-left: $base-size;
+}
+
+.main-post {
+  float: left;
+  max-width: 700px;
+}
+
+
+.main-post-body {
+  font-size: $base-size;
+  font-weight: 700;
+  line-height: $double-base-size;
+  margin: $base-size;
+  padding-right: $double-base-size;
+
+  p {
+    margin: $base-size * 1.5 0;
+    overflow: auto;
+  }
+}
+
+
+blockquote {
+  border-left: 2px solid $accent-color-light;
+  font-size: $double-base-size;
+  font-weight: 400;
+  margin: $base-size;
+  padding: $base-size;
+}
+
+.main-post-footer {
+  margin: 0 $half-base-size;
+
+  * {
+    display: inline-block;
+    font-size: $small-font;
+    height: $double-base-size;
+    vertical-align: middle;
+  }
+
+  i {
+    background-color: $body-color-dark;
+    float: left;
+    font-size: $base-size;
+    line-height: $double-base-size;
+    position: absolute;
+    top: 0;
+    width: $double-base-size;
+
+  }
+
+  span {
+    margin-left: $double-base-size;
+    padding: $half-base-size $three-quarters-base-size;
+  }
+
+  a {
+    background-color: $accent-color-light;
+    margin: 0 $half-base-size;
+    position: relative;
+    text-align: center;
+
+    &:hover {
+      background-color: $primary-color;
+
+      i {
+        background-color: $heading-color;
+      }
+    }
+  }
+}
+
+
+// ============= Sidebar ==================*/
+
+.sidebar {
+  margin-top: $base-size * 5;
+  max-width: $base-size * 18;
+  overflow: auto;
+  padding: 0 $base-size;
+}
+
+.author-info {
+  margin-bottom: $base-size * 3;
+  overflow: auto;
+  text-align: center;
+
+  .color-overlay {
+    background-image: url('https://avatars3.githubusercontent.com/u/8377050?v=2&s=460');
+    height: $base-size * 5;
+    margin: 0 auto;
+    width: $base-size * 5;
+  }
+
+  .author-name {
+    display: block;
+    font-size: $base-size;
+    margin-top: $base-size;
+  }
+}
+
+.social-links {
+  font-size: $small-font
+
+  a {
+    padding: 0 $half-base-size;
+  }
+}
+
+.ad {
+  text-align: right;
+
+  div {
+    background-image: url('https://avatars3.githubusercontent.com/u/8377050?v=2&s=460');
+    height: $base-size * 18;
+    width: $base-size * 17;
+      }
+}
+
+.caption {
+  line-height: $base-size *2;
+  font-size:  $small-font;
+}
+
+.sidebar-section p {
+  font-size: $small-font;
+  line-height: $double-base-size;
+  margin-top: $half-base-size;
+}
+
+// ================= Featured Posts ================*/
+
+.featured-posts {
+
+  h2 {
+    border-top: 1px solid $accent-color-light;
+    padding-top: $base-size * 3;
+    text-align: center;
+  }
+
+  h3 {
+    display: inline-block;
+    margin: 0;
+    padding-right: $base-size;
+  }
+
+  div {
+    background-image: url('https://avatars3.githubusercontent.com/u/8377050?v=2&s=460');
+    display: inline-block;
+    height: $base-size * 20;
+    width: 25%;
+    }
+}
+
+// ================= Footer ================*/
+
+footer {
+  background: #083451;
+  overflow: auto;
+}
+
+.footer-content {
+  margin: $base-size auto;
+  max-width: $max-content-width;
+  overflow: auto;
+}
+
+.footer-info {
+  float: left;
+}
+  .copy-short {
+    display: none;
+  }
+
+  .copy-long {
+    font-size: $small-font;
+    line-height: $base-size * 4.8;
+  }
+
+.nav-icon {
+    display: none !important;
+  }
+
+nav {
+  float: right;
+
+  li {
+    border-right: solid 1px $accent-color-light;
+    display: inline-block;
+    font-size: $small-font;
+    margin: $three-quarters-base-size 0;
+    padding: 0 $half-base-size;
+
+    &:last-of-type {
+      border-right: none !important;
+    }
+  }
+}
+
+
+
+//* ================= Image Hover overlays ============== */
+
+.color-overlay {
+  background-size: cover;
+  position: relative;
+
+  a {
+    background-color: rgba(16, 109, 179, .5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  h3 {
+    bottom: $double-base-size;
+    color: $heading-color;
+    left: $double-base-size;
+    position: absolute;
+  }
+
+  &:hover {
+
+    h3 {
+      color: #fff;
+      @include slow-transition;
+    }
+
+    a {
+      background: none;
+      @include slow-transition;
+    }
+  }
+}
+
+// ================= GLOBAL CLASSES ==================== */
+
+.invisible {
+  display: none;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+// ================= RESPONSIVE STUFF ================== */
+
+@media all
+and (max-width: 1020px)
+and (min-width: 800px) {
+  header {
+    height: 350px;
+  }
+
+  .upper-header {
+    width: 750px;
+  }
+
+  .company-name {
+    margin-top: 4.5em;
+  }
+
+  h1 {
+    font-size: 6em;
+  }
+
+  .company-name span {
+    font-size: .9em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  main {
+    width: 800px;
+  }
+
+  .main-post {
+    width: 600px;
+
+    p {
+      font-weight: 500;
+      letter-spacing: auto;
+    }
+  }
+
+  .sidebar {
+    width: $base-size * 10.5;
+    display: inline-block;
+
+  .color-overlay {
+    width: 100%;
+    height: $base-size * 10.5;
+  }
+
+  .caption {
+    font-size: .7em;
+  }}
+
+  .footer-content {
+    width: 800px;
+  }
+
+  .copy-short {
+    display: inline !important;
+  }
+
+  .copy-long {
+    display: none !important;
+  }
+
+  nav ul {
+    padding-left: 0;
+  }
+}
+
+@media all
+and (max-width: 799px)
+and (min-width: 500px) {
+  header {
+    height: 350px;
+  }
+
+  .upper-header {
+    max-width: 700px;
+    margin: .5em 1em;
+  }
+
+  .company-name {
+    margin-top: 1em;
+  }
+
+  h1 {
+    font-size: 6em;
+    max-width: 750px;
+  }
+
+  main {
+    max-width: 750px;
+  }
+
+  .main-post {
+    max-width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .featured-posts div {
+    overflow: auto;
+    width: 50%;
+  }
+
+  nav {
+    margin-top: 1em;
+  }
+
+  nav ul {
+  }
+
+  .footer-content {
+    max-width: 750px;
+  }
+
+  .footer-content i {
+    margin-right: 1em;
+  }
+}
+
+@media all and (max-width: 499px) {
+  header {
+    height: 400px;
+  }
+
+  .site-name {
+    display: none;
+  }
+
+  .upper-nav {
+    float: none;
+    font-size: .9em;
+    margin: 1em;
+  }
+
+  .search {
+    float: right;
+  }
+
+  .company-name {
+    margin: 1em 0 0 -.31em;
+  }
+
+  h1 {
+    font-size: 5em;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .company-name span {
+    font-size: .9em;
+  }
+
+  main {
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .byline {
+    margin: 1em;
+
+    .datetime,
+    span, {
+      margin: 0;
+    }
+  }
+
+  .main-post {
+    padding: 0 1em;
+  }
+
+  .main-post-body {
+    margin: 1em;
+
+    p {
+      font-size: .8em;
+    }
+  }
+
+  blockquote {
+    font-size: 1.1em;
+  }
+
+  .main-post-footer {
+    margin: 0 auto;
+    max-width: 200px;
+
+    span {
+      display: none;
+    }
+
+    a {
+      margin: 0 1em;
+      padding: 0;
+    }
+
+    i {
+      margin-right: 0;
+    }
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .featured-posts div {
+    height: 220px;
+    width: 50%;
+
+    h3 {
+      color: #fff;
+      font-size: 1.3em;
+    }
+  }
+
+  footer {
+    font-size: .9em;
+  }
+
+  .footer-info {
+    float: left;
+  }
+
+  .nav-icon {
+    .fa {
+      display: inline-block !important;
+      font-size: 2em;
+      margin-right: .5em;
+    }
+  }
+
+  nav {
+    margin-top: 1em;
+
+    ul {
+      width: 100%;
+      padding: 0px;
+    }
+  }
+
+  .footer-content {
+    width: 300px;
+
+    span {
+      display: none;
+    }
+  }
+}
